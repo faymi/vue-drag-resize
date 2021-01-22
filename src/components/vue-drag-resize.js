@@ -15,7 +15,7 @@ export default {
     name: 'vue-drag-resize',
     props: {
         stickSize: {
-          type: Number, default: 8,
+          type: Number, default: 20,
         },
         parentScaleX: {
             type: Number, default: 1,
@@ -133,7 +133,7 @@ export default {
         sticks: {
             type: Array,
             default: function () {
-                return ['tl', 'tm', 'tr', 'mr', 'br', 'bm', 'bl', 'ml']
+                return ['tr', 'bl']
             }
         },
         axis: {
