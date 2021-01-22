@@ -10,13 +10,16 @@
     top: 0;
     left: 0;
     box-sizing: border-box;
-    outline: 1px dashed #FFF;
+    outline: 1px solid #FFF;
 }
 .vdr-stick {
     box-sizing: border-box;
     position: absolute;
     background: #ffffff;
     border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .inactive .vdr-stick {
     display: none;

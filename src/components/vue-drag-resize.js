@@ -436,6 +436,10 @@ export default {
             this.limits = this.calcResizeLimitation();
         },
 
+        stickRemove() {
+            this.$emit('remove');
+        },
+
         calcResizeLimitation() {
             let minw = this.minWidth;
             let minh = this.minHeight;
