@@ -6,19 +6,19 @@
     <slot></slot>
 
     <div 
-        class="vdr-stick-tr" 
+        class="vdr-stick vdr-stick-tr" 
         :class="[isResizable ? '' : 'not-resizable']" 
         @mousedown.stop.prevent="stickDown('tr', $event)"
         @touchstart.stop.prevent="stickDown('tr', $event)"
         :style="vdrStick('tr')">
-        <img style="width: 15px; height: 15px; display: block" src="/assets/resize.png" />
+        <img style="width: 15px; height: 15px; display: block" src="/assets/drag-resize-icons/resize.png" />
     </div>
 
     <div 
-        class="vdr-stick-bl" 
+        class="vdr-stick vdr-stick-bl" 
         :class="[isResizable ? '' : 'not-resizable']"
         @click.stop.prevent="stickRemove"
         :style="vdrStick('bl')">
-        <img style="width: 15px; height: 15px; display: block" src="/assets/close.png" />
+        <img style="width: 15px; height: 15px; display: block" src="/assets/drag-resize-icons/close.png" />
     </div>
 </div>
