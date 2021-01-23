@@ -17,7 +17,7 @@
     <div 
         class="vdr-stick vdr-stick-bl" 
         :class="[isResizable ? '' : 'not-resizable']"
-        @click.native="stickRemove"
+        @click.stop.prevent="stickRemove"
         :style="vdrStick('bl')">
         <img style="width: 12px; height: 12px; display: block" src="/assets/drag-resize-icons/close.png" />
     </div>
