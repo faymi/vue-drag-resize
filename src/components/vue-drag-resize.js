@@ -437,6 +437,7 @@ export default {
         },
 
         stickRemove() {
+            console.log('remove stick');
             this.$emit('remove');
         },
 
