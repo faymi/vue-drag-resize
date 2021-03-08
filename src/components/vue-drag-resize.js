@@ -436,7 +436,7 @@ export default {
             this.limits = this.calcResizeLimitation();
         },
 
-        stickRemove() {
+        stickRemove: function () {
             this.$emit('remove');
         },
 
